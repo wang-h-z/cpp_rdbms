@@ -30,10 +30,9 @@ int main(int argc, char *argv[]) {
       // Each byte in this block represents one disk block's type
       for (int j = 0; j < BLOCK_SIZE; j++) {
           int blockNum = i * BLOCK_SIZE + j;
-          std::cout << "Block " << blockNum << ": " << (int)buffer[j] << "\n";
+          std::cout << "Byte " << blockNum << " type: " << (int)buffer[j] << "\n";
       }
   }
-
 
   return 0;
   // return FrontendInterface::handleFrontend(argc, argv);
