@@ -50,6 +50,32 @@ Important directories/files to note for now are:
 
 ## Running the XFS Interface
 
+1. Go to the `XFS_Interface/` folder and run these commands:
+
+```c++
+./xfs-interface
+```
+
+2. You should now be in inside the XFS interface prompt. Run the fdisk command to create the disk.xfs file
+
+```c++
+# fdisk
+```
+
+3. You should see:
+
+```c++
+# fdisk
+Disk formatted
+#
+```
+
+4. Now that we have the disk file we can exit:
+
+```c++
+# exit
+```
+
 ## Part 1: Understanding the Physical Layer
 
 
