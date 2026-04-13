@@ -78,7 +78,13 @@ Disk formatted
 
 ## Part 1: Understanding the Physical Layer
 
+Here are the essential details to understand this project's physical layer.
 
+## Disk Model
+The disk consists of **8192 blocks**, and each block is **2048 bytes**. 
 
+The **Block Allocation Map** tells us whether a block is free or occupied. If occupied, there is a type (found in `./define/constants.h`) of the block. It requires one byte per block, so the BAM requires **8192/2048 = 4 blocks** of space.
+
+For a more detailed explanation, you can take a look at [NITCbase's explanation.](https://nitcbase.github.io/docs/Design/Physical%20Layer/#internal-index-block-structure)
 
 
