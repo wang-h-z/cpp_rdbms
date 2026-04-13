@@ -22,6 +22,19 @@ int main(int argc, char *argv[]) {
   memcpy(message2, buffer2 + 20, 6);
   std::cout << message2 << std::endl;
 
+  // Read all 4 BAM blocks
+  for (int i = 0; i < BLOCK_ALLOCATION_MAP_SIZE; i++) {
+      unsigned char buffer[BLOCK_SIZE];
+      Disk::readBlock(buffer, i);
+
+      // Each byte in this block represents one disk block's type
+      for (int j = 0; j < BLOCK_SIZE; j++) {
+          int blockNum = i * BLOCK_SIZE + j;
+          std::cout << "Block " << blockNum << ": " << (int)buffer[j] << "\n";
+      }
+  }
+
+
   return 0;
   // return FrontendInterface::handleFrontend(argc, argv);
 } 
