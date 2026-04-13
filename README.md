@@ -4,7 +4,7 @@ This project is an ongoing Relational Database Management System (RDBMS) impleme
 
 ## Part 0: Understanding the project structure
 
-The project is as 
+The project 
 ## Part 1: Understanding the Physical Layer
 
 

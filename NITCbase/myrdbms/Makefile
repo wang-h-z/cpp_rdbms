@@ -1,9 +1,9 @@
 ifeq ($(mode),debug)
 	CFLAGS := -g
 	BUILD_DIR = ./build/debug
-	TARGET = nitcbase-debug
+	TARGET = rdbms-debug
 else
-	TARGET = nitcbase
+	TARGET = rdbms
 	BUILD_DIR = ./build
 endif
 
