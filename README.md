@@ -35,6 +35,20 @@ Important directories/files to note for now are:
 * `Disk/`: contains the `disk` binary file where storage is simulated
 * `XFS_Interface/`: executable `xfs_interface` is present here
 
+> [!NOTE]
+> What is a XFS_Interface?
+>
+> XFS (eXternal File System) interface is a utility tool that sits outside the RDBMS and gives direct access to the disk. 
+>
+> The XFS lets you: 
+>
+> `DUMP BMAP` - print the Block Allocation Map 
+>
+> `PRINT TABLE` - view table contents directly from disk
+>
+> `PRINT B+ TREE` - visualize index structure
+
+## Running the XFS Interface
 
 ## Part 1: Understanding the Physical Layer
 
